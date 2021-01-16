@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="10"> -->
+    <title>
+        {{page_title}}
+    </title>
+    {% load static %}
+    <link rel="icon" href="{% static 'hovedside/img/favicon.ico' %}">
+    <style>
+        @font-face {
+          font-family: 'BERNHC';
+          src: local('BERNHC'),
+               url('{% static "hovedside/fonts/BERNHC.ttf" %}'), format("truetype");
+        }
+        body{
+            font-family: "BERNHC";
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="{% static 'hovedside/css/base.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'hovedside/css/content-block.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'hovedside/css/relevant-block.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'hovedside/css/default-bodycontainer.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'hovedside/css/base2.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'hovedside/css/dashboard.css' %}">
+
+
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <div class="header-links">
+                <div class="header-link-container">
+                    <h2>Viktige saker</h2>
+                    <p>Menu</p>
+                </div>
+                <div class="header-link-container">
+                    <h2>Meny</h2>
+                </div>
+                <div class="header-link-container">
+                    <h2>OM</h2>
+                    <p>Litt om denne siden</p>
+                </div>
+                <div class="header-link-container">
+                    <h2>Lag sak</h2>
+                    <p>Lag en sak til stemming</p>
+                </div>
+                
+            </div>
+            <div class="header-header">
+                <a href="{% url 'hovedside:index' %}">
+                    <h1 class="header-font-style">S t e m</h1>
+                    <h1 class="header-font-style">D i r e k t e</h1>
+                </a>
+                    <h1>
+                        S P Q N
+                    </h1>
+            </div>
+            <div class="header-user">
+                <div class="header-user-links">
+                    <div class="header-link-container">
+                        <h2>Instillinger</h2>
+                        <p>Meny</p>
+                    </div>
+                    
+                </div>
+                <div class="header-user-container">
+                    {% if user.is_authenticated %}
+                        <div class="header-user-block header-user-block-authenticated">
+                            <a href="{% url 'hovedside:dashboard' %}"><h2>{{user.username|default:"Login"}}</h2></a>
+                        </div>                        
+                    {% else %}
+                        <div class="header-user-block header-user-block-not-authenticated">
+                            <a href="{% url 'login' %}"><h2>Login</h2></a>
+                        </div>
+                    {% endif %}   
+                </div>            
+            </div>
+        </div>
+        
+        
+    </div>
+    <div class="create-voting-container">
+        <div class="create-voting">
+            <p>Lag en stemming</p>
+        </div>
+    </div>
+
+    
+
+    {% block body %}
+        <h1>Base</h1>
+    {% endblock %}
+    {% block main %}
+        <h1>Base</h1>
+    {% endblock %}
+
+    <div class="background-image">
+        <img src="{% static 'hovedside/img/norge-natt-bilde-v3.gif' %}" alt="NORGE NATT BAKRGRUNN" style="display: none;">
+    </div>
+    
+</body>
+</html>

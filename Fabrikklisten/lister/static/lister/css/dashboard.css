@@ -1,0 +1,20 @@
+.dashboard{
+    margin: auto;
+    margin-top: 100px;
+    border: 1px dashed grey;
+    margin-bottom: 100px;
+    padding: 20px;
+}
+.dashboard a{
+    margin: 10px;
+    padding: 10px;
+    text-decoration: underline;
+    color: white;
+    font-size: large;
+    border-radius: 10px;
+    
+}
+.dashboard a:hover{
+    background-color: #002868;
+    cursor: pointer;
+}

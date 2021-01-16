@@ -1,0 +1,28 @@
+.relevant{
+    width: 30%;
+    background-color: #002868;
+    float: right;
+    border: 15px solid #ef2b2d;
+    margin: 15px;
+    /* border-radius: 5pc;*/
+}
+.relevant h1{
+    text-decoration: underline;
+    
+}
+.relevant h1:hover{
+    cursor: pointer;
+    color: grey;
+}
+.relevant-header{
+
+}
+.relevant-category{
+
+}
+.relevant-category-header{
+
+}
+.relevant-category-content{
+
+}

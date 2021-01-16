@@ -1,0 +1,19 @@
+<!--hovedside/templates/registration/login.html-->
+
+{% extends "base.html" %}
+
+{% block body %}
+
+<h2>Login</h2>
+
+<form method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Login"></input>
+</form>
+
+<a href="{% url  'hovedside:dashboard' %}">Back to dashboard</a>
+<a href="{% url 'password_reset' %}">Reset password</a>
+<a href="{% url 'hovedside:register' %}">Register</a>
+
+{% endblock body %}

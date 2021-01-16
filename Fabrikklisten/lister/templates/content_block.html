@@ -1,0 +1,53 @@
+<div class="content">
+    <div class="content-header">
+        <h1>I N N H O L D</h1>
+    </div>
+    <div class="content-content">
+        <div class="content-block">
+            <div class="content-block-header">
+                <h1>Statistikk</h1>
+            </div>
+            <div class="content-block-content">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis nobis perspiciatis ipsum cupiditate minus, quaerat nemo suscipit nostrum aspernatur saepe reiciendis enim incidunt distinctio sequi rerum debitis provident voluptatum dolor?
+                </p>
+            </div>
+        </div>
+        <div class="content-block edition-2">
+            <div class="content-block-header edition-2">
+                <h1>Si din mening</h1>
+            </div>
+            <div class="content-block-content edition-2">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sint, dolorum adipisci provident a tempore! Iusto exercitationem eveniet ipsam. Cum nam repellendus recusandae maiores maxime inventore corporis mollitia magnam eum.
+                </p>
+            </div>
+        </div>
+
+        {% for article in article_list %}
+            
+        <div class="content-block" id='article{{ article.id }}'>
+            <div class="content-block-header">
+                <h1>{{ article.content_header }}</h1>
+            </div>
+            <div class="content-block-content">
+                <p>
+                    {{ article.content_text }}
+                </p>
+            </div>
+        </div>
+            
+        <!-- <div class="content-block edition-2" id='article{{ article.id }}'>
+            <div class="content-block-header edition-2">
+                <h1>{{ article.content_header }}</h1>
+            </div>
+            <div class="content-block-content edition-2">
+                <p>
+                    {{ article.content_text }}
+                </p>
+            </div>
+        </div> -->
+            
+        {% endfor %}
+    </div>
+</div>

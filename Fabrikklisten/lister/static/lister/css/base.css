@@ -1,0 +1,162 @@
+@font-face{
+    font-family: "BERNHC";
+    src: local("BERNHC"), url('../fonts/BERNHC.ttf') format("truetype");
+}
+body{
+    background-color: black;
+    margin: auto;
+    margin: 0px;
+    text-align: center;
+    font-family: "BERNHC";
+    color: white;
+    overflow: hidden;
+}
+
+.background-image{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+
+.default-bodycontainer{
+    width: 100%;
+    display: flex;
+}
+
+
+.header{
+    background-color: #ef2b2d;
+    padding: 12px;
+    color: white;
+
+    -webkit-box-shadow: 0px 0px 13px 9px #000000; 
+    box-shadow: 0px 0px 13px 9px #000000;
+    position: relative;
+}
+
+
+.header-content{
+    background-color: #002868;
+    display: flex;
+    height: 100px;
+    width: 100%;
+    contain: content;
+}
+
+.header-links{
+    width: 35%;
+    text-align: left;
+    /* padding-left: 20px; */
+    background-color: #000524;
+    display: inline-flex;
+}
+.header-link-container{
+    /* margin-right: 15px;
+    margin-left: 15px; */
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+}
+.header-link-container:hover{
+    background-color: #002868;
+    cursor: pointer;
+}
+.header-header{
+    z-index: 1;
+    width: 30%;
+    border-left: 1px solid #c5c5c5;
+    border-right: 1px solid #c5c5c5;
+    background-color: #000940;
+    /*
+    box-shadow: 12px 0 15px -4px rgba(0, 55, 162, 0.97), -12px 0 8px -4px rgba(0, 55, 162, 0.97);
+    */
+}
+.header-header h1{
+
+}
+.header-header:hover{
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    cursor: pointer;
+    background-color: #002868;
+    /*
+    box-shadow: 0 9px 0px 0px #f0f1f5, 0 -9px 0px 0px #f0f1f5, 12px 0 15px -4px rgba(0, 55, 162, 0.97), -12px 0 15px -4px rgba(0, 55, 162, 0.97);
+    */
+}
+.header-header a{
+    text-decoration: none;
+    color: white;
+
+}
+.header-font-style{
+    font-size: xxx-large;
+    text-decoration: none;
+}
+.header-user{
+    width: 35%;
+    background-color: #000524;
+    text-align: right;
+    /* padding-right: 0px; */
+    display: inline-flex;
+}
+
+.header-user-links{
+    height: 100%;
+    width: 70%;
+}
+.header-user-container{
+    height: 100%;
+    width: 30%;
+    display: flex;
+}
+
+.header-user-block{
+    height: 100%;
+    width: 100%;
+    /* padding-top: 10px; */
+    padding-right: 40px;
+}
+.header-user-block:hover{
+    background-color: #002868;
+    cursor: pointer;
+}
+.header-user-block a{
+    text-decoration: underline;
+    color: white;
+}
+.header-user-block-authenticated{
+
+}
+.header-user-block-not-authenticated{
+
+}
+
+.create-voting-container{
+    display: none;
+    background-color: #8e1d1e;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin: auto;
+    width: 172px;
+    position: relative;
+    top: -32px;
+
+}
+.create-voting{
+    background-color: #000524;
+    padding: 1px;
+    padding-top: 14px;
+}
+
+.create-voting:hover{
+    background-color: #002868;
+    cursor: pointer;
+}
+
+.single-bodycontainer{
+    margin: auto;
+    padding: 30px;
+}

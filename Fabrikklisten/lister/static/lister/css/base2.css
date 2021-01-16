@@ -1,0 +1,159 @@
+@font-face{
+    font-family: "BERNHC";
+    src: local("BERNHC"), url('../fonts/BERNHC.ttf') format("truetype");
+}
+body{
+    background-color: black;
+    margin: auto;
+    margin: 0px;
+    text-align: center;
+    font-family: "BERNHC";
+    color: white;
+    overflow: hidden;
+}
+
+.background-image{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+
+.default-bodycontainer{
+    width: 100%;
+    display: flex;
+}
+
+
+.header{
+    background-color: #8e1d1e;
+    padding: 12px;
+    color: white;
+
+    -webkit-box-shadow: 0px 0px 13px 9px #000000; 
+    box-shadow: 0px 0px 13px 9px #000000;
+    position: relative;
+}
+
+
+.header-content{
+    background-color: #000524;
+    display: flex;
+    height: 100px;
+    width: 100%;
+}
+
+.header-links{
+    width: 35%;
+    text-align: left;
+    /* padding-left: 20px; */
+    background-color: #000524;
+    display: inline-flex;
+}
+.header-header{
+    z-index: 1;
+    width: 30%;
+    /*
+    box-shadow: 12px 0 15px -4px rgba(0, 55, 162, 0.97), -12px 0 8px -4px rgba(0, 55, 162, 0.97);
+    */
+}
+.header-header:hover{
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    cursor: pointer;
+    /*
+    box-shadow: 0 9px 0px 0px #f0f1f5, 0 -9px 0px 0px #f0f1f5, 12px 0 15px -4px rgba(0, 55, 162, 0.97), -12px 0 15px -4px rgba(0, 55, 162, 0.97);
+    */
+}
+.header-header a{
+    text-decoration: none;
+    color: white;
+
+}
+.header-font-style{
+    font-size: xxx-large;
+    text-decoration: none;
+}
+.header-user{
+    width: 35%;
+    background-color: #000524;
+    text-align: right;
+    /* padding-right: 30px; */
+}
+
+
+.relevant{
+    width: 30%;
+    background-color: #000524;
+    float: right;
+    border: 15px solid #8e1d1e;
+    margin: 15px;
+    /* border-radius: 5pc;*/
+}
+.relevant h1{
+    text-decoration: underline;
+    
+}
+.relevant h1:hover{
+    cursor: pointer;
+    color: grey;
+}
+.relevant-header{
+
+}
+.relevant-category{
+
+}
+.relevant-category-header{
+
+}
+.relevant-category-content{
+
+}
+
+
+
+
+
+
+.content{
+    width: 70%;
+    background-color: #e8e8e8;
+    color: black;
+    margin: 0px;
+    border: 15px solid #8e1d1e;
+    margin: 15px;
+    border-radius: 5pc;
+    contain: paint;
+}
+/* .content-header{
+
+}
+.content-content{
+    display: flex;
+    background-color: black;
+    margin: auto;
+}
+.content-block{
+    width: 47%;
+    background-color: #8e1d1e;
+    color: white;
+    border: 10px solid #b32728;
+    margin: 15px;
+
+} */
+.edition-2{
+    background-color: #dddddd;
+    color:black;
+    border-color: #e8e8e8;
+}
+.content-block-header{
+
+}
+.content-block-content{
+    color: white;
+    background-color: #000524;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+}
